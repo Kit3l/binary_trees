@@ -23,7 +23,7 @@ size_t binary_tree_height(const binary_tree_t *tree)
 			r = tree->right ? 1 + binary_tree_height(tree->right) : 1;
 		}
 		return ((l > r) ? l : r);
-	}
+		}
 }
 
 /**
@@ -52,7 +52,7 @@ int bal_avl(const binary_tree_t *tree, int lower, int high)
 		}
 		return (bal_avl(tree->left, lower, tree->n - 1) &&
  			bal_avl(tree->right, tree->n + 1, high));
-       	        }
+        }
 	return (1);
 }
 
