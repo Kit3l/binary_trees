@@ -51,8 +51,8 @@ int bal_avl(const binary_tree_t *tree, int lower, int high)
 			return (0);
 		}
 		return (bal_avl(tree->left, lower, tree->n - 1) &&
-			bal_avl(tree->right, tree->n + 1, high));
-	}
+ 			bal_avl(tree->right, tree->n + 1, high));
+       	        }
 	return (1);
 }
 
