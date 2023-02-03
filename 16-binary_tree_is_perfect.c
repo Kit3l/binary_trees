@@ -43,7 +43,7 @@ int BT_perfect(const binary_tree_t *tree)
 		return (binary_tree_depth(tree));
 
 	perfect_left = BT_perfect(tree->left);
-	perfect_right = BT_perfect(tree->right);
+	perfet_right = BT_perfect(tree->right);
 
 	if (perfect_left == perfet_right)
 		perfect = perfect_left;
